@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+    
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a9973282d2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/cs.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science Enthusiast</p>
+                    <h1>Hi i'm Evans<br> Mosoti</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------about-------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/img.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an enthusiastic person. I love building both front and back end parts of 
+                            websites even though right now i am dealing with machine learning</p>
+                            
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java</span><br>Mobile application programming with java</li>
+                                <li><span>Web development</span><br>full stack web developer</li>
+                                <li><span>Machine learning</span><br>application of machine learning concepts in the development of interactive models</li> 
+                            </ul>
+                         </div> 
+                         <div class="tab-contents" id="experience">
+                            <ul> 
+                                <li><span>2024</span><br>Attachment at the KNCHR</li>
+                            </ul>
+                         </div> 
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-</span><br>Bsc Computer Science</li>
+                                <li><span>2016-2019</span><br>KCSE Certificate</li>
+                                <li><span>2009-2015</span><br>KCPE Certificate</li>
+                            </ul>
+                         </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------------services---------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h2>Web Design</h2>
+                        <p>I design websites using html, css and javaScript</p>
+                        <a href="https://github.com/Evans-16/nazzy">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>Android development</h2>
+                        <p>I design android applications using java in android studio</p>
+                        <a href="https://github.com/Evans-16/nazzy">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-face-smile"></i>
+                        <h2>Machine Learning</h2>
+                        <p>I train models using machine learning concepts using python, tensorflow and keras</p>
+                        <a href="https://github.com/Evans-16/nazzy">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------My Work-----------------------------  -->>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/farmer.jpg" alt="">
+                        <div class="layer">
+                            <h3>Farmers App</h3>
+                            <p>An application that allows farmers advertise their farm produce for sale</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/ecco.jpg" alt="">
+                        <div class="layer"> 
+                            <h3>Commart Web</h3>
+                            <p>An online website that enables campus students to buy and sell their products</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/music.jpg" alt="">
+                        <div class="layer">
+                            <h3>Music Jukebox</h3>
+                            <p>An application that enables people to listen to music for free without interruptions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------Contacts---------------------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>evansmosoti16@gmail.com</p>
+                        <p><i class="fa-brands fa-whatsapp"></i>0748434734</p>
+                        <div class="social-icons">
+                            <a href="http://www.linkedin.com/in/evans-mosoti-a3b026262"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="Images/EVANS ICHWARA MOSOTI.pdf" download class="button btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Evans Mosoti</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab"); 
+            }
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "o";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyirq58_RfKR86VVEOZ2WR1p5VfZURc0awzsP9HwuenV8e_aGIoXlxqTBHbUGk017yS/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e =>{
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
